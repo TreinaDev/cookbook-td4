@@ -1,0 +1,27 @@
+<%= form_with model: @recipe, local: true do |f| %>
+  <div>
+    <%= f.label :title, 'Título' %>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= f.label :cuisine, 'Cozinha' %>
+    <%= f.text_field :cuisine %>
+  </div>
+  <div>
+    <%= f.label :recipe_type, 'Tipo' %>
+    <%= f.text_field :recipe_type %>
+  </div>
+  <div>
+    <%= f.label :cook_time, 'Tempo de preparo' %>
+    <%= f.number_field :cook_time %>
+  </div>
+  <div>
+    <%= f.label :ingredients, 'Ingredientes' %>
+    <%= f.text_field :ingredients %>
+  </div>
+  <div>
+    <%= f.label :cook_method, 'Modo de preparo' %>
+    <%= f.text_area :cook_method %>
+  </div>
+  <%= f.submit 'Cadastrar' %>
+<% end %>

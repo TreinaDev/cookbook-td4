@@ -1,5 +1,7 @@
 <h1>Boas vindas ao CookBook um site de receitas legais</h1>
 
+<%= link_to 'Cadastrar receita', new_recipe_path %>
+
 <% @recipes.each do |recipe| %>
   <h3><%= recipe.title %></h3>
   <dl>
