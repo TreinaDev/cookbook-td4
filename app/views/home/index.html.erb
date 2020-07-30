@@ -1,1 +1,13 @@
-<h1>Treinadev</h1>
+<h1>Boas vindas ao CookBook um site de receitas legais</h1>
+
+<% @recipes.each do |recipe| %>
+  <h3><%= recipe.title %></h3>
+  <dl>
+    <dt>Cozinha</dt>
+    <dd><%= recipe.cuisine %></dd>
+    <dt>Tipo</dt>
+    <dd><%= recipe.recipe_type %></dd>
+    <dt>Tempo de preparo</dt>
+    <dd><%= recipe.cook_time %> minuto(s)</dd>
+  </dl>
+<% end %>
